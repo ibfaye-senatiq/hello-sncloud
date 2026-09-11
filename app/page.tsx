@@ -3,12 +3,11 @@ export default function Home() {
     <main>
       <h1>hello-sncloud 👋</h1>
       <p>
-        This is a reference workload deployed to <strong>SN Cloud</strong> via
-        the Coolify API — the anti-corruption-layer deploy path.
+        This is a reference workload deployed to <strong>SN Cloud</strong>.
       </p>
       <ul>
         <li>Framework: Next.js 14 (App Router)</li>
-        <li>Build pack: nixpacks</li>
+        <li>Build pack: Railpack</li>
         <li>Deployed from: GitHub repo → HTTPS URL</li>
       </ul>
       <p className="muted">
