@@ -3,7 +3,7 @@ export default function Home() {
     <main>
       <h1>hello-sncloud 👋</h1>
       <p>
-        This is a reference workload deployed to <strong>SN Cloud</strong>.
+        This is a reference workload deployed to to <strong>SN Cloud</strong>.
       </p>
       <ul>
         <li>Framework: Next.js 14 (App Router)</li>
