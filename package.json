@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "prebuild": "node -e \"const k=['SNCLOUD_CANARY_RUNTIME_ONLY','SNCLOUD_CANARY_BUILD_ONLY','DATABASE_URL','DIRECT_URL'];console.log('[env-scope-canary] phase=build '+k.map(x=>x+'='+(process.env[x]?'PRESENT':'ABSENT')).join(' '))\"",
+    "start": "node -e \"const k=['SNCLOUD_CANARY_RUNTIME_ONLY','SNCLOUD_CANARY_BUILD_ONLY','DATABASE_URL','DIRECT_URL'];console.log('[env-scope-canary] phase=runtime '+k.map(x=>x+'='+(process.env[x]?'PRESENT':'ABSENT')).join(' '))\" && next start"
   },
   "dependencies": {
     "next": "^15.2.4",
